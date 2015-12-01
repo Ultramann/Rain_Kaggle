@@ -66,6 +66,6 @@ def impute_missing_rf(df, iterations=5):
             column_number += 1
         changes.append(change)
         stdout.flush()
-        print '  ' +time_spent_str.capitalize().format(average_column_time, cum_time) + ' '*41 + '\r'
+        print '  ' + time_spent_str.capitalize().format(average_column_time, cum_time) + ' '*41 + '\r'
 
     return best_guess_df, changes
